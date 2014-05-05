@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D016932319107EF60097D91F /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D051342C19107B11006D90C5 /* libMapbox.a */; };
-		D016932419107F020097D91F /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D051342E19107B11006D90C5 /* Mapbox.bundle */; };
+		D016932319107EF60097D91F /* libXMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D051342C19107B11006D90C5 /* libXMap.a */; };
+		D016932419107F020097D91F /* XMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D051342E19107B11006D90C5 /* XMap.bundle */; };
 		D0512F55190F4596006D90C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F54190F4596006D90C5 /* Foundation.framework */; };
 		D0512F57190F4596006D90C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F56190F4596006D90C5 /* CoreGraphics.framework */; };
 		D0512F59190F4596006D90C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F58190F4596006D90C5 /* UIKit.framework */; };
@@ -18,8 +18,6 @@
 		D0512F6E190F4596006D90C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F6D190F4596006D90C5 /* XCTest.framework */; };
 		D0512F6F190F4596006D90C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F54190F4596006D90C5 /* Foundation.framework */; };
 		D0512F70190F4596006D90C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F58190F4596006D90C5 /* UIKit.framework */; };
-		D0512F78190F4596006D90C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0512F76190F4596006D90C5 /* InfoPlist.strings */; };
-		D0512F7A190F4596006D90C5 /* LeaderMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0512F79190F4596006D90C5 /* LeaderMapTests.m */; };
 		D0512F90190F58D5006D90C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F8F190F58D5006D90C5 /* CoreLocation.framework */; };
 		D0512F92190F58DF006D90C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F91190F58DF006D90C5 /* QuartzCore.framework */; };
 		D0512F95190F58FE006D90C5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F94190F58FE006D90C5 /* libsqlite3.dylib */; };
@@ -83,9 +81,6 @@
 		D0512F64190F4596006D90C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0512F6C190F4596006D90C5 /* LeaderMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaderMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0512F6D190F4596006D90C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D0512F75190F4596006D90C5 /* LeaderMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeaderMapTests-Info.plist"; sourceTree = "<group>"; };
-		D0512F77190F4596006D90C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D0512F79190F4596006D90C5 /* LeaderMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaderMapTests.m; sourceTree = "<group>"; };
 		D0512F8F190F58D5006D90C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D0512F91190F58DF006D90C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D0512F94190F58FE006D90C5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -115,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D016932319107EF60097D91F /* libMapbox.a in Frameworks */,
+				D016932319107EF60097D91F /* libXMap.a in Frameworks */,
 				D0512F97190F5906006D90C5 /* libz.dylib in Frameworks */,
 				D0512F95190F58FE006D90C5 /* libsqlite3.dylib in Frameworks */,
 				D0512F92190F58DF006D90C5 /* QuartzCore.framework in Frameworks */,
@@ -146,7 +141,6 @@
 				D0512FE419107640006D90C5 /* Resources */,
 				D0512FC4191075D3006D90C5 /* Categories */,
 				D0512FE519107661006D90C5 /* xmap-ios-sdk */,
-				D0512F73190F4596006D90C5 /* LeaderMapTests */,
 				D0512F53190F4596006D90C5 /* Frameworks */,
 				D0512F52190F4596006D90C5 /* Products */,
 			);
@@ -203,24 +197,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D0512F73190F4596006D90C5 /* LeaderMapTests */ = {
-			isa = PBXGroup;
-			children = (
-				D0512F79190F4596006D90C5 /* LeaderMapTests.m */,
-				D0512F74190F4596006D90C5 /* Supporting Files */,
-			);
-			path = LeaderMapTests;
-			sourceTree = "<group>";
-		};
-		D0512F74190F4596006D90C5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D0512F75190F4596006D90C5 /* LeaderMapTests-Info.plist */,
-				D0512F76190F4596006D90C5 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D0512FC4191075D3006D90C5 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,8 +233,8 @@
 		D051342719107B11006D90C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D051342C19107B11006D90C5 /* libMapbox.a */,
-				D051342E19107B11006D90C5 /* Mapbox.bundle */,
+				D051342C19107B11006D90C5 /* libXMap.a */,
+				D051342E19107B11006D90C5 /* XMap.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,17 +317,17 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D051342C19107B11006D90C5 /* libMapbox.a */ = {
+		D051342C19107B11006D90C5 /* libXMap.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libMapbox.a;
+			path = libXMap.a;
 			remoteRef = D051342B19107B11006D90C5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D051342E19107B11006D90C5 /* Mapbox.bundle */ = {
+		D051342E19107B11006D90C5 /* XMap.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = Mapbox.bundle;
+			path = XMap.bundle;
 			remoteRef = D051342D19107B11006D90C5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -362,7 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D016932419107F020097D91F /* Mapbox.bundle in Resources */,
+				D016932419107F020097D91F /* XMap.bundle in Resources */,
 				D0512FD81910762E006D90C5 /* icon.png in Resources */,
 				D0512FDF1910762E006D90C5 /* offline@2x.png in Resources */,
 				D0512FDE1910762E006D90C5 /* offline.png in Resources */,
@@ -380,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0512F78190F4596006D90C5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0512F7A190F4596006D90C5 /* LeaderMapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,14 +402,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0512F5E190F4596006D90C5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D0512F76190F4596006D90C5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0512F77190F4596006D90C5 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -1,0 +1,3 @@
+[submodule "xmap-ios-sdk"]
+	path = xmap-ios-sdk
+	url = https://github.com/sw897/xmap-ios-sdk.git

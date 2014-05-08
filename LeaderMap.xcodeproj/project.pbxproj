@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D016932319107EF60097D91F /* libXMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D051342C19107B11006D90C5 /* libXMap.a */; };
-		D016932419107F020097D91F /* XMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D051342E19107B11006D90C5 /* XMap.bundle */; };
 		D0512F55190F4596006D90C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F54190F4596006D90C5 /* Foundation.framework */; };
 		D0512F57190F4596006D90C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F56190F4596006D90C5 /* CoreGraphics.framework */; };
 		D0512F59190F4596006D90C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0512F58190F4596006D90C5 /* UIKit.framework */; };
@@ -25,26 +23,16 @@
 		D0512FD71910762E006D90C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FC61910762E006D90C5 /* Default-568h@2x.png */; };
 		D0512FD81910762E006D90C5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FC71910762E006D90C5 /* icon.png */; };
 		D0512FD91910762E006D90C5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FC81910762E006D90C5 /* icon@2x.png */; };
-		D0512FDA1910762E006D90C5 /* interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FC91910762E006D90C5 /* interactive.png */; };
-		D0512FDB1910762E006D90C5 /* interactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FCA1910762E006D90C5 /* interactive@2x.png */; };
-		D0512FDC1910762E006D90C5 /* InteractiveLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0512FCC1910762E006D90C5 /* InteractiveLayerViewController.m */; };
 		D0512FDD1910762E006D90C5 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D0512FCE1910762E006D90C5 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D0512FDE1910762E006D90C5 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FCF1910762E006D90C5 /* offline.png */; };
-		D0512FDF1910762E006D90C5 /* offline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FD01910762E006D90C5 /* offline@2x.png */; };
-		D0512FE01910762E006D90C5 /* OfflineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0512FD21910762E006D90C5 /* OfflineLayerViewController.m */; };
-		D0512FE11910762E006D90C5 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FD31910762E006D90C5 /* online.png */; };
-		D0512FE21910762E006D90C5 /* online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0512FD41910762E006D90C5 /* online@2x.png */; };
-		D0512FE31910762E006D90C5 /* OnlineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0512FD61910762E006D90C5 /* OnlineLayerViewController.m */; };
+		D062E8BD1919C09A0046B62A /* WfurbanLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D062E8BC1919C09A0046B62A /* WfurbanLayerViewController.m */; };
+		D062E8C01919C0E80046B62A /* FsLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D062E8BF1919C0E80046B62A /* FsLayerViewController.m */; };
+		D062E8CF1919D0610046B62A /* wfurban.png in Resources */ = {isa = PBXBuildFile; fileRef = D062E8CB1919D0610046B62A /* wfurban.png */; };
+		D062E8D01919D0610046B62A /* wfurban@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D062E8CC1919D0610046B62A /* wfurban@2x.png */; };
+		D0937C4F19177BFE0045B8EC /* libXMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0937C4A19177BB60045B8EC /* libXMap.a */; };
+		D0937C5019177C130045B8EC /* XMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0937C4C19177BB60045B8EC /* XMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D016931F19107EED0097D91F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D051342619107B11006D90C5 /* MapView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
-			remoteInfo = MapView;
-		};
 		D0512F71190F4596006D90C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0512F49190F4596006D90C5 /* Project object */;
@@ -52,19 +40,26 @@
 			remoteGlobalIDString = D0512F50190F4596006D90C5;
 			remoteInfo = LeaderMap;
 		};
-		D051342B19107B11006D90C5 /* PBXContainerItemProxy */ = {
+		D0937C4919177BB60045B8EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D051342619107B11006D90C5 /* MapView.xcodeproj */;
+			containerPortal = D0937C4419177BB60045B8EC /* MapView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 17F31EFA1331050A00122B16;
 			remoteInfo = MapView;
 		};
-		D051342D19107B11006D90C5 /* PBXContainerItemProxy */ = {
+		D0937C4B19177BB60045B8EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D051342619107B11006D90C5 /* MapView.xcodeproj */;
+			containerPortal = D0937C4419177BB60045B8EC /* MapView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DD6A83751644A20C0097F31F;
 			remoteInfo = Resources;
+		};
+		D0937C4D19177BF60045B8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0937C4419177BB60045B8EC /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
+			remoteInfo = MapView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -88,21 +83,15 @@
 		D0512FC61910762E006D90C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "LeaderMap/Default-568h@2x.png"; sourceTree = "<group>"; };
 		D0512FC71910762E006D90C5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = LeaderMap/icon.png; sourceTree = "<group>"; };
 		D0512FC81910762E006D90C5 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "LeaderMap/icon@2x.png"; sourceTree = "<group>"; };
-		D0512FC91910762E006D90C5 /* interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = interactive.png; path = LeaderMap/interactive.png; sourceTree = "<group>"; };
-		D0512FCA1910762E006D90C5 /* interactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "interactive@2x.png"; path = "LeaderMap/interactive@2x.png"; sourceTree = "<group>"; };
-		D0512FCB1910762E006D90C5 /* InteractiveLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveLayerViewController.h; sourceTree = "<group>"; };
-		D0512FCC1910762E006D90C5 /* InteractiveLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveLayerViewController.m; sourceTree = "<group>"; };
 		D0512FCD1910762E006D90C5 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "LeaderMap/NSData+Base64.h"; sourceTree = "<group>"; };
 		D0512FCE1910762E006D90C5 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "LeaderMap/NSData+Base64.m"; sourceTree = "<group>"; };
-		D0512FCF1910762E006D90C5 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = offline.png; path = LeaderMap/offline.png; sourceTree = "<group>"; };
-		D0512FD01910762E006D90C5 /* offline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "offline@2x.png"; path = "LeaderMap/offline@2x.png"; sourceTree = "<group>"; };
-		D0512FD11910762E006D90C5 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
-		D0512FD21910762E006D90C5 /* OfflineLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineLayerViewController.m; sourceTree = "<group>"; };
-		D0512FD31910762E006D90C5 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = online.png; path = LeaderMap/online.png; sourceTree = "<group>"; };
-		D0512FD41910762E006D90C5 /* online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "online@2x.png"; path = "LeaderMap/online@2x.png"; sourceTree = "<group>"; };
-		D0512FD51910762E006D90C5 /* OnlineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineLayerViewController.h; sourceTree = "<group>"; };
-		D0512FD61910762E006D90C5 /* OnlineLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineLayerViewController.m; sourceTree = "<group>"; };
-		D051342619107B11006D90C5 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "../mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		D062E8BB1919C09A0046B62A /* WfurbanLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WfurbanLayerViewController.h; sourceTree = "<group>"; };
+		D062E8BC1919C09A0046B62A /* WfurbanLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WfurbanLayerViewController.m; sourceTree = "<group>"; };
+		D062E8BE1919C0E80046B62A /* FsLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FsLayerViewController.h; sourceTree = "<group>"; };
+		D062E8BF1919C0E80046B62A /* FsLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FsLayerViewController.m; sourceTree = "<group>"; };
+		D062E8CB1919D0610046B62A /* wfurban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wfurban.png; path = LeaderMap/wfurban.png; sourceTree = "<group>"; };
+		D062E8CC1919D0610046B62A /* wfurban@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wfurban@2x.png"; path = "LeaderMap/wfurban@2x.png"; sourceTree = "<group>"; };
+		D0937C4419177BB60045B8EC /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "xmap-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D016932319107EF60097D91F /* libXMap.a in Frameworks */,
+				D0937C4F19177BFE0045B8EC /* libXMap.a in Frameworks */,
 				D0512F97190F5906006D90C5 /* libz.dylib in Frameworks */,
 				D0512F95190F58FE006D90C5 /* libsqlite3.dylib in Frameworks */,
 				D0512F92190F58DF006D90C5 /* QuartzCore.framework in Frameworks */,
@@ -173,12 +162,10 @@
 		D0512F5A190F4596006D90C5 /* LeaderMap */ = {
 			isa = PBXGroup;
 			children = (
-				D0512FD11910762E006D90C5 /* OfflineLayerViewController.h */,
-				D0512FD21910762E006D90C5 /* OfflineLayerViewController.m */,
-				D0512FD51910762E006D90C5 /* OnlineLayerViewController.h */,
-				D0512FD61910762E006D90C5 /* OnlineLayerViewController.m */,
-				D0512FCB1910762E006D90C5 /* InteractiveLayerViewController.h */,
-				D0512FCC1910762E006D90C5 /* InteractiveLayerViewController.m */,
+				D062E8BB1919C09A0046B62A /* WfurbanLayerViewController.h */,
+				D062E8BC1919C09A0046B62A /* WfurbanLayerViewController.m */,
+				D062E8BE1919C0E80046B62A /* FsLayerViewController.h */,
+				D062E8BF1919C0E80046B62A /* FsLayerViewController.m */,
 				D0512F63190F4596006D90C5 /* AppDelegate.h */,
 				D0512F64190F4596006D90C5 /* AppDelegate.m */,
 				D0512F5B190F4596006D90C5 /* Supporting Files */,
@@ -209,15 +196,11 @@
 		D0512FE419107640006D90C5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D0512FD31910762E006D90C5 /* online.png */,
-				D0512FD41910762E006D90C5 /* online@2x.png */,
-				D0512FCF1910762E006D90C5 /* offline.png */,
-				D0512FD01910762E006D90C5 /* offline@2x.png */,
+				D062E8CB1919D0610046B62A /* wfurban.png */,
+				D062E8CC1919D0610046B62A /* wfurban@2x.png */,
 				D0512FC61910762E006D90C5 /* Default-568h@2x.png */,
 				D0512FC71910762E006D90C5 /* icon.png */,
 				D0512FC81910762E006D90C5 /* icon@2x.png */,
-				D0512FC91910762E006D90C5 /* interactive.png */,
-				D0512FCA1910762E006D90C5 /* interactive@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -225,16 +208,16 @@
 		D0512FE519107661006D90C5 /* xmap-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
-				D051342619107B11006D90C5 /* MapView.xcodeproj */,
+				D0937C4419177BB60045B8EC /* MapView.xcodeproj */,
 			);
 			name = "xmap-ios-sdk";
 			sourceTree = "<group>";
 		};
-		D051342719107B11006D90C5 /* Products */ = {
+		D0937C4519177BB60045B8EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D051342C19107B11006D90C5 /* libXMap.a */,
-				D051342E19107B11006D90C5 /* XMap.bundle */,
+				D0937C4A19177BB60045B8EC /* libXMap.a */,
+				D0937C4C19177BB60045B8EC /* XMap.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D016932019107EED0097D91F /* PBXTargetDependency */,
+				D0937C4E19177BF60045B8EC /* PBXTargetDependency */,
 			);
 			name = LeaderMap;
 			productName = LeaderMap;
@@ -304,8 +287,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D051342719107B11006D90C5 /* Products */;
-					ProjectRef = D051342619107B11006D90C5 /* MapView.xcodeproj */;
+					ProductGroup = D0937C4519177BB60045B8EC /* Products */;
+					ProjectRef = D0937C4419177BB60045B8EC /* MapView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -317,18 +300,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D051342C19107B11006D90C5 /* libXMap.a */ = {
+		D0937C4A19177BB60045B8EC /* libXMap.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libXMap.a;
-			remoteRef = D051342B19107B11006D90C5 /* PBXContainerItemProxy */;
+			remoteRef = D0937C4919177BB60045B8EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D051342E19107B11006D90C5 /* XMap.bundle */ = {
+		D0937C4C19177BB60045B8EC /* XMap.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = XMap.bundle;
-			remoteRef = D051342D19107B11006D90C5 /* PBXContainerItemProxy */;
+			remoteRef = D0937C4B19177BB60045B8EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -338,17 +321,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D016932419107F020097D91F /* XMap.bundle in Resources */,
+				D062E8CF1919D0610046B62A /* wfurban.png in Resources */,
+				D0937C5019177C130045B8EC /* XMap.bundle in Resources */,
 				D0512FD81910762E006D90C5 /* icon.png in Resources */,
-				D0512FDF1910762E006D90C5 /* offline@2x.png in Resources */,
-				D0512FDE1910762E006D90C5 /* offline.png in Resources */,
 				D0512FD71910762E006D90C5 /* Default-568h@2x.png in Resources */,
-				D0512FDA1910762E006D90C5 /* interactive.png in Resources */,
 				D0512F5F190F4596006D90C5 /* InfoPlist.strings in Resources */,
-				D0512FE21910762E006D90C5 /* online@2x.png in Resources */,
-				D0512FE11910762E006D90C5 /* online.png in Resources */,
-				D0512FDB1910762E006D90C5 /* interactive@2x.png in Resources */,
 				D0512FD91910762E006D90C5 /* icon@2x.png in Resources */,
+				D062E8D01919D0610046B62A /* wfurban@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,12 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D062E8C01919C0E80046B62A /* FsLayerViewController.m in Sources */,
 				D0512F65190F4596006D90C5 /* AppDelegate.m in Sources */,
 				D0512FDD1910762E006D90C5 /* NSData+Base64.m in Sources */,
 				D0512F61190F4596006D90C5 /* main.m in Sources */,
-				D0512FDC1910762E006D90C5 /* InteractiveLayerViewController.m in Sources */,
-				D0512FE01910762E006D90C5 /* OfflineLayerViewController.m in Sources */,
-				D0512FE31910762E006D90C5 /* OnlineLayerViewController.m in Sources */,
+				D062E8BD1919C09A0046B62A /* WfurbanLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,15 +363,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D016932019107EED0097D91F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MapView;
-			targetProxy = D016931F19107EED0097D91F /* PBXContainerItemProxy */;
-		};
 		D0512F72190F4596006D90C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0512F50190F4596006D90C5 /* LeaderMap */;
 			targetProxy = D0512F71190F4596006D90C5 /* PBXContainerItemProxy */;
+		};
+		D0937C4E19177BF60045B8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapView;
+			targetProxy = D0937C4D19177BF60045B8EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -493,7 +471,7 @@
 				INFOPLIST_FILE = "LeaderMap/LeaderMap-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/sw/github/mapbox-ios-sdk/MapView/Map/GRMustache/lib",
+					"$(SRCROOT)/xmap-ios-sdk/MapView/Map/GRMustache/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/xmap-ios-sdk/**";
@@ -511,7 +489,7 @@
 				INFOPLIST_FILE = "LeaderMap/LeaderMap-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/sw/github/mapbox-ios-sdk/MapView/Map/GRMustache/lib",
+					"$(SRCROOT)/xmap-ios-sdk/MapView/Map/GRMustache/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/xmap-ios-sdk/**";

@@ -8,9 +8,8 @@
 
 #import "AppDelegate.h"
 
-#import "OnlineLayerViewController.h"
-#import "OfflineLayerViewController.h"
-#import "InteractiveLayerViewController.h"
+#import "FsLayerViewController.h"
+#import "WfurbanLayerViewController.h"
 
 @implementation AppDelegate
 
@@ -22,18 +21,51 @@
     
     NSMutableArray *viewControllers = [NSMutableArray array];
     
-    for (NSString *typeString in [NSArray arrayWithObjects:@"online", @"offline", @"interactive", nil])
+    // get all tileset
+    NSMutableArray *tileSetList = [[NSMutableArray alloc] init];
+    NSString *documentDir = [NSString stringWithFormat:@"%@/Documents", NSHomeDirectory()];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *tempArray = [fileManager contentsOfDirectoryAtPath:documentDir error:nil];
+    for (NSString *fileName in tempArray) {
+        BOOL flag = YES;    
+        NSString *fullPath = [documentDir stringByAppendingPathComponent:fileName];
+        if ([fileManager fileExistsAtPath:fullPath isDirectory:&flag]) {
+            if (flag) {
+                NSString *config = [fullPath stringByAppendingPathComponent:@"ImageProperties.xml"];
+                if ([fileManager fileExistsAtPath:config])
+                {
+                    [tileSetList addObject:fileName];
+                    NSLog(@"%@", fileName);
+                }
+            }
+        }
+    }
+    
+//    for (NSString *tileSet in tileSetList)
+//    {
+//        Class ViewControllerClass = NSClassFromString([NSString stringWithFormat:@"%@LayerViewController", [tileSet capitalizedString]]);
+//        
+//        UIViewController *viewController = [[ViewControllerClass alloc] initWithNibName:nil bundle:nil];
+//        
+//        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:tileSet image:nil tag:0];
+//        
+//        [viewControllers addObject:viewController];
+//    }
+    
+    for (NSString *typeString in [NSArray arrayWithObjects:@"wfurban", nil])
     {
         Class ViewControllerClass = NSClassFromString([NSString stringWithFormat:@"%@LayerViewController", [typeString capitalizedString]]);
         
         UIViewController *viewController = [[ViewControllerClass alloc] initWithNibName:nil bundle:nil];
         
-        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"%@ Layer", [typeString capitalizedString]]
-                                                                  image:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", typeString]]
-                                                                    tag:0];
+//        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"%@ Layer", [typeString capitalizedString]]
+//                                                                  image:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", typeString]]
+//                                                                    tag:0];
+        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:typeString image:nil tag:0];
         
         [viewControllers addObject:viewController];
     }
+    
     
     tabBarController.viewControllers = viewControllers;
     

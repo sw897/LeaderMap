@@ -1,0 +1,9 @@
+<mapsources>
+    <mapsource name="天地图矢量" type="tianditu" resource="http://t0.tianditu.cn/vec_w/wmts?LAYER=vec" zoom="0" />
+    <mapsource name="天地图影像" type="tianditu" resource="http://t0.tianditu.cn/img_w/wmts?LAYER=img" zoom="0" />
+    <mapsource name="世界夜景" type="mbtile" resource="nightworld" zoom="0" />
+    <!--
+     <mapsource name="潍坊市域" type="filesystem" resource="潍坊市地图,0,6" zoom="0" />
+    <mapsource name="潍坊城区" type="filesystem" resource="潍坊城区图,0,6" zoom="0" />
+     -->
+</mapsources>

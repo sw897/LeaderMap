@@ -13,6 +13,7 @@
 #import "RMMapboxSource.h"
 #import "RMMBTilesSource.h"
 #import "RMGenericMapSource.h"
+#import "RMTianDiTuMapSource.h"
 
 @interface LeaderMapViewController ()
 
@@ -20,7 +21,9 @@
 
 @implementation LeaderMapViewController
 
-@synthesize mapSourceConfig=_mapSourceConfig;
+@synthesize mapSource=_mapSource;
+//@synthesize mapSources=_mapSources;
+@synthesize mapView=_mapView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,15 +37,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view from its nib.
-    
-    NSString *resource = [self.mapSourceConfig resource];
-    NSString *type = [self.mapSourceConfig type];
-    float zoom = [self.mapSourceConfig zoom];
-    
+    // create and add mapview
+    _mapView = [self createMapView];
+    [self.view addSubview:_mapView];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)backOff:(id)sender
+{
+    //[self dismissModalViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(RMMapView*)createMapView
+{
     RMMapView *mapView = nil;
     RMAbstractMercatorTileSource *mapSource = nil;
+    
+    NSString *resource = [self.mapSource resource];
+    NSString *type = [self.mapSource type];
+    float zoom = [self.mapSource zoom];
+
     
     if([type isEqualToString:@"filesystem"]) {
         NSArray *res = [resource componentsSeparatedByString:@","];
@@ -61,6 +82,8 @@
     } else if ([type isEqualToString:@"mbtile"]) {
         NSString *path = [NSString stringWithFormat:@"%@/Documents/%@", NSHomeDirectory(), resource];
         mapSource = [[RMMBTilesSource alloc] initWithTileSetResource:path ofType:@"mbtiles"];
+    } else if ([type isEqualToString:@"tianditu"]) {
+        mapSource = [[RMTianDiTuMapSource alloc] initWithHost:resource];
     } else if ([type isEqualToString:@"mapbox"]) {
         NSArray *mapIds = [resource componentsSeparatedByString:@","];
         NSString *kRetinaMapID = [mapIds objectAtIndex:0];
@@ -91,19 +114,8 @@
     mapView.zoom = zoom;
     mapView.minZoom = mapSource.minZoom;
     mapView.maxZoom = mapSource.maxZoom;
-    [self.view addSubview:mapView];
-    
+    return mapView;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)backOff:(id)sender
-{
-    [self dismissModalViewControllerAnimated:YES];
-}
 
 @end

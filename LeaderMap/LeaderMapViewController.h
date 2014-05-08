@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MapSourceConfig.h"
+#import "Mapbox.h"
 
 @interface LeaderMapViewController : UIViewController
 
-@property (retain,nonatomic) MapSourceConfig *mapSourceConfig;
+//@property (retain,nonatomic) NSMutableArray *mapSources;
+@property (retain,nonatomic) MapSourceConfig *mapSource;
+@property (retain,nonatomic) RMMapView *mapView;
 
+-(RMMapView*)createMapView;
 @end

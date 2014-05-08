@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface AppDelegate : UIResponder <UIApplicationDelegate,NSXMLParserDelegate>
+{
+    NSMutableArray *mapSources;
+}
 @property (strong, nonatomic) UIWindow *window;
+
+//@property (retain,nonatomic) NSMutableArray *mapSources;
+//@property (retain,nonatomic) MapSourceConfig *mapSource;
 
 @end

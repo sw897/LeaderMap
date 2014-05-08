@@ -23,7 +23,8 @@
     NSError *error;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    for (NSString* filename in [NSArray arrayWithObjects:@"maps.xml", @"nightworld.mbtiles", nil]) {
+    //for (NSString* filename in [NSArray arrayWithObjects:@"maps.xml", @"nightworld.mbtiles", nil]) {
+    for (NSString* filename in [NSArray arrayWithObjects:@"maps.xml", nil]) {
         NSString *targetFile = [documentsDirectory stringByAppendingPathComponent:filename];
         success = [fileManager fileExistsAtPath:targetFile];
         if (!success) {

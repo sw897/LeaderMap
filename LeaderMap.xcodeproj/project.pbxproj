@@ -10,7 +10,6 @@
 		D041043F191B36AA002230C3 /* LeaderMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D041043D191B36AA002230C3 /* LeaderMapViewController.m */; };
 		D0410443191B373A002230C3 /* MapSourceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D0410442191B373A002230C3 /* MapSourceConfig.m */; };
 		D0410445191B83C8002230C3 /* maps.xml in Resources */ = {isa = PBXBuildFile; fileRef = D0410444191B83C8002230C3 /* maps.xml */; };
-		D0410447191B83F1002230C3 /* nightworld.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = D0410446191B83F1002230C3 /* nightworld.mbtiles */; };
 		D0410450191BCBBA002230C3 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = D041044C191BCBBA002230C3 /* offline.png */; };
 		D0410451191BCBBA002230C3 /* offline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D041044D191BCBBA002230C3 /* offline@2x.png */; };
 		D0410452191BCBBA002230C3 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = D041044E191BCBBA002230C3 /* online.png */; };
@@ -73,7 +72,6 @@
 		D0410441191B373A002230C3 /* MapSourceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSourceConfig.h; sourceTree = "<group>"; };
 		D0410442191B373A002230C3 /* MapSourceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSourceConfig.m; sourceTree = "<group>"; };
 		D0410444191B83C8002230C3 /* maps.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = maps.xml; path = LeaderMap/maps.xml; sourceTree = "<group>"; };
-		D0410446191B83F1002230C3 /* nightworld.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; name = nightworld.mbtiles; path = LeaderMap/nightworld.mbtiles; sourceTree = "<group>"; };
 		D041044C191BCBBA002230C3 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = offline.png; path = LeaderMap/offline.png; sourceTree = "<group>"; };
 		D041044D191BCBBA002230C3 /* offline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "offline@2x.png"; path = "LeaderMap/offline@2x.png"; sourceTree = "<group>"; };
 		D041044E191BCBBA002230C3 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = online.png; path = LeaderMap/online.png; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 				D041044D191BCBBA002230C3 /* offline@2x.png */,
 				D041044E191BCBBA002230C3 /* online.png */,
 				D041044F191BCBBA002230C3 /* online@2x.png */,
-				D0410446191B83F1002230C3 /* nightworld.mbtiles */,
 				D0410444191B83C8002230C3 /* maps.xml */,
 				D0512FC61910762E006D90C5 /* Default-568h@2x.png */,
 				D0512FC71910762E006D90C5 /* icon.png */,
@@ -346,7 +343,6 @@
 				D0512F5F190F4596006D90C5 /* InfoPlist.strings in Resources */,
 				D0512FD91910762E006D90C5 /* icon@2x.png in Resources */,
 				D0410452191BCBBA002230C3 /* online.png in Resources */,
-				D0410447191B83F1002230C3 /* nightworld.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

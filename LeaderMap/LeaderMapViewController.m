@@ -123,6 +123,14 @@
     mapView.zoom = zoom;
     mapView.minZoom = mapSource.minZoom;
     mapView.maxZoom = mapSource.maxZoom;
+//    if([type isEqualToString:@"filesystem"]) {
+//        CLLocationCoordinate2D center;
+//        RMFSMapSource * temp = (RMFSMapSource*)mapSource;
+//        center.longitude = temp.relWidth*1./temp.worldSize*90-180;
+//        center.latitude = 90 - temp.relHeight*1./temp.worldSize*90;
+//        NSLog(@"%lf,%lf", center.longitude, center.latitude);
+//        [mapView setZoom:0 atCoordinate:center animated:NO];
+//    }
     return mapView;
 }
 

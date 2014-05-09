@@ -15,6 +15,8 @@
 #import "RMGenericMapSource.h"
 #import "RMTianDiTuMapSource.h"
 
+#import "ZipArchive.h"
+
 @interface LeaderMapViewController ()
 
 @end
@@ -78,6 +80,13 @@
         if (count > 2) {
             maxZoom = [[res objectAtIndex:2] floatValue];
         }
+        // unzip map resource
+        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            NSString * zipfile = [NSString stringWithFormat:@"%@.zip", path];
+            if ([[NSFileManager defaultManager] fileExistsAtPath:zipfile]) {
+                [self unzip:zipfile];
+            }
+        }
         mapSource = [[RMFSMapSource alloc] initWithPath:path minZoom:minZoom maxZoom:maxZoom];
     } else if ([type isEqualToString:@"mbtile"]) {
         NSString *path = [NSString stringWithFormat:@"%@/Documents/%@", NSHomeDirectory(), resource];
@@ -117,5 +126,20 @@
     return mapView;
 }
 
+- (void) unzip:(NSString *)zipfile
+{
+    NSString *unzipto = [NSString stringWithFormat:@"%@/Documents", NSHomeDirectory()];
+    NSString *l_zipfile = zipfile;
+    
+    ZipArchive* zip = [[ZipArchive alloc] init];
+    if( [zip UnzipOpenFile:l_zipfile] )
+    {
+        BOOL ret = [zip UnzipFileTo:unzipto overWrite:YES];
+        if( NO==ret )
+        {
+        }
+        [zip UnzipCloseFile];
+    }
+}
 
 @end

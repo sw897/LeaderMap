@@ -17,4 +17,5 @@
 @property (retain,nonatomic) RMMapView *mapView;
 
 -(RMMapView*)createMapView;
+- (void) unzip:(NSString *)zipfile;
 @end

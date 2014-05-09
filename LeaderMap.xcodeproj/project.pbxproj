@@ -33,6 +33,11 @@
 		D0512FDD1910762E006D90C5 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D0512FCE1910762E006D90C5 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D0937C4F19177BFE0045B8EC /* libXMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0937C4A19177BB60045B8EC /* libXMap.a */; };
 		D0937C5019177C130045B8EC /* XMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0937C4C19177BB60045B8EC /* XMap.bundle */; };
+		D0C04C6B191C596C0036D316 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D0C04C61191C596C0036D316 /* ioapi.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0C04C6C191C596C0036D316 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = D0C04C63191C596C0036D316 /* mztools.c */; };
+		D0C04C6D191C596C0036D316 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D0C04C65191C596C0036D316 /* unzip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0C04C6E191C596C0036D316 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D0C04C67191C596C0036D316 /* zip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0C04C6F191C596C0036D316 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0C04C6A191C596C0036D316 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +103,17 @@
 		D0512FCD1910762E006D90C5 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "LeaderMap/NSData+Base64.h"; sourceTree = "<group>"; };
 		D0512FCE1910762E006D90C5 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "LeaderMap/NSData+Base64.m"; sourceTree = "<group>"; };
 		D0937C4419177BB60045B8EC /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "xmap-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		D0C04C60191C596C0036D316 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		D0C04C61191C596C0036D316 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		D0C04C62191C596C0036D316 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		D0C04C63191C596C0036D316 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		D0C04C64191C596C0036D316 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		D0C04C65191C596C0036D316 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		D0C04C66191C596C0036D316 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		D0C04C67191C596C0036D316 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		D0C04C68191C596C0036D316 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		D0C04C69191C596C0036D316 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		D0C04C6A191C596C0036D316 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +184,9 @@
 		D0512F5A190F4596006D90C5 /* LeaderMap */ = {
 			isa = PBXGroup;
 			children = (
+				D0C04C5F191C596C0036D316 /* minizip */,
+				D0C04C69191C596C0036D316 /* ZipArchive.h */,
+				D0C04C6A191C596C0036D316 /* ZipArchive.mm */,
 				D0512F5B190F4596006D90C5 /* Supporting Files */,
 				D041043C191B36AA002230C3 /* LeaderMapViewController.h */,
 				D041043D191B36AA002230C3 /* LeaderMapViewController.m */,
@@ -229,6 +248,22 @@
 				D0937C4C19177BB60045B8EC /* XMap.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0C04C5F191C596C0036D316 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				D0C04C60191C596C0036D316 /* crypt.h */,
+				D0C04C61191C596C0036D316 /* ioapi.c */,
+				D0C04C62191C596C0036D316 /* ioapi.h */,
+				D0C04C63191C596C0036D316 /* mztools.c */,
+				D0C04C64191C596C0036D316 /* mztools.h */,
+				D0C04C65191C596C0036D316 /* unzip.c */,
+				D0C04C66191C596C0036D316 /* unzip.h */,
+				D0C04C67191C596C0036D316 /* zip.c */,
+				D0C04C68191C596C0036D316 /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,10 +395,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C04C6B191C596C0036D316 /* ioapi.c in Sources */,
 				D0512F65190F4596006D90C5 /* AppDelegate.m in Sources */,
 				D0410443191B373A002230C3 /* MapSourceConfig.m in Sources */,
+				D0C04C6E191C596C0036D316 /* zip.c in Sources */,
+				D0C04C6F191C596C0036D316 /* ZipArchive.mm in Sources */,
 				D0512FDD1910762E006D90C5 /* NSData+Base64.m in Sources */,
+				D0C04C6C191C596C0036D316 /* mztools.c in Sources */,
 				D0512F61190F4596006D90C5 /* main.m in Sources */,
+				D0C04C6D191C596C0036D316 /* unzip.c in Sources */,
 				D041043F191B36AA002230C3 /* LeaderMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
